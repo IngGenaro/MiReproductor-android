@@ -63,7 +63,7 @@ public class DetailActivity extends ActionBarActivity implements View.OnClickLis
             case R.id.play:
 
                 player = MediaPlayer.create(DetailActivity.this,
-                        getResources().getIdentifier("raw/","raw",getPackageName()));
+                        getResources().getIdentifier("raw/"+cancion.getSong(),"raw",getPackageName()));
 
                 player.start();
                 break;
